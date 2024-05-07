@@ -10,6 +10,11 @@ public class Transmision {
 	public Transmision() {
 	}
 
+	public Transmision(String tipo, String velocidades) {
+		this.tipo = tipo;
+		this.velocidades = velocidades;
+	}
+
 	public String getTipo() {
 		return tipo;
 	}

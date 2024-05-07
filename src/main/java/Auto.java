@@ -19,6 +19,35 @@ public class Auto {
 	public Auto() {
 	}
 
+	public Auto(String id, String marca, String modelo, String año, String color, String tipo_motor, String cilindrada,
+			String potencia, Transmision transmision) {
+		this.id = id;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.año = año;
+		this.color = color;
+		this.tipo_motor = tipo_motor;
+		this.cilindrada = cilindrada;
+		this.potencia = potencia;
+		this.transmision = transmision;
+	}
+
+	/**
+	 * Imprime los datos del auto
+	 */
+	public void imprimirDatos(){
+		System.out.println("id: " + this.id);
+		System.out.println("marca: " + this.marca );
+		System.out.println("año: " + this.año);
+		System.out.println("color: " + this.color);
+		System.out.println("tipo de motor: " + this.tipo_motor);
+		System.out.println("cilindrada: " + this.cilindrada);
+		System.out.println("potencia: " + this.potencia);
+		System.out.println("transmision:");
+		System.out.println("tipo: " + this.transmision.getTipo());
+		System.out.println("velocidades: " + this.transmision.getVelocidades());
+	}
+
 	@XmlAttribute(name = "id")
 	public String getId() {
 		return id;
