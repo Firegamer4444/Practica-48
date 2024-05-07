@@ -14,6 +14,10 @@ public class Autos {
 		this.listaAutos = listaAutos;
 	}
 
+	public void añadirAuto(Auto auto){
+		this.listaAutos.add(auto);
+	}
+
 	@XmlElement(name = "auto")
 	public ArrayList<Auto> getlistaAutos() {
 		return listaAutos;

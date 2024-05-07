@@ -38,6 +38,7 @@ public class Auto {
 	public void imprimirDatos(){
 		System.out.println("id: " + this.id);
 		System.out.println("marca: " + this.marca );
+		System.out.println("modelo: " + this.modelo );
 		System.out.println("año: " + this.año);
 		System.out.println("color: " + this.color);
 		System.out.println("tipo de motor: " + this.tipo_motor);
